@@ -2,4 +2,4 @@
 
 ## Homework 9. **CSS Position**
 
-Github Pages link: [`Click here`](https://deeckoy.github.io/Devolution-Homework-9/)
+Github Pages link: [`Click here`](https://deeckoy.github.io/Devolution-homework-9/)
