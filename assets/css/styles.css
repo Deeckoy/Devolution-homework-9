@@ -1,0 +1,147 @@
+@import "./normalize.css";
+
+.header {
+	width: 100%;
+	height: 80px;
+
+	padding: 0 104px;
+
+	position: sticky;
+	top: 0;
+
+	display: flex;
+	align-items: center;
+	column-gap: 24px;
+
+	background: black;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 20%);
+	z-index: 10;
+}
+
+.header__link {
+	padding: 4px 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+
+	transition: background 200ms ease;
+}
+
+.header__link:hover {
+	border-radius: 4px;
+	background: rgb(255, 255, 255, 25%);
+}
+
+.main {
+	padding: 40px 104px;
+}
+
+.select_wrap {
+	margin-bottom: 40px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 32px;
+}
+
+.select {
+	width: 500px;
+	height: 250px;
+
+	padding: 20px 24px;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 10px;
+
+	border: 2px dashed #ddd;
+	border-radius: 8px;
+
+	transition: 200ms ease;
+}
+
+.select.active {
+	border: 2px solid #009fb7;
+}
+
+.select.active::before {
+	content: "";
+
+	width: 16px;
+	height: 16px;
+
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	background: url("https://img.icons8.com/ios-glyphs/512/checked--v1.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.select:hover {
+	transform: translateY(-6px);
+
+	cursor: pointer;
+}
+
+.select__title {
+	font-size: 2rem;
+
+	pointer-events: none;
+}
+
+.select__text {
+	font-size: 1.4rem;
+	color: #696970;
+
+	pointer-events: none;
+}
+
+.scrollable {
+	width: 800px;
+	height: 800px;
+
+	margin-bottom: 40px;
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	font-size: 1.6rem;
+
+	overflow-y: auto;
+}
+
+.image_sticky {
+	width: 100%;
+	height: 250px;
+
+	position: sticky;
+	top: 0;
+
+	object-fit: cover;
+	object-position: center;
+
+	box-shadow: 0 0 15px rgba(0, 0, 0, 30%);
+}
+
+.image_centered {
+	width: 450px;
+	height: 450px;
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
